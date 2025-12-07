@@ -228,13 +228,13 @@ end
       local tween = TweenService:Create(UIGradient, tweeninfo, {Rotation = 360})
       tween:Play()
 
-          function toggleui()
+           function toggleui()
     toggled = not toggled
     spawn(function()
         if toggled then wait(0.3) end
     end)
     Tween(Main, {0.3, 'Sine', 'InOut'}, {
-        Size = UDim2.new(0, 304, 0, (toggled and 252 or 0))  -- 609*0.5=304.5≈304, 505*0.5=252.5≈252
+        Size = UDim2.new(0, 121, 0, (toggled and 101 or 0))  -- 609*0.2=121.8≈121, 505*0.2=101
     })
 end
       
